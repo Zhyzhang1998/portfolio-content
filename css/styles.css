@@ -17,6 +17,10 @@
     padding-left: 20px
 }
 
+.title, .maintext {
+    color: #000000;
+}
+
 .gallery {
     width: 500px;
     padding: 20px;
@@ -46,16 +50,35 @@ main {
 
 footer {
     text-align: center;
-    color: #ffffff;
+    color: #000000;
     background-color: #cacaca;
     padding: 30px;
 }
 
-.grid-container {
+.grid-container-home {
     display: grid;
-    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-rows: 2fr 8fr 1fr 1fr;
     grid-template-columns: 1fr;
 }
+
+.grid-container-about {
+    display: grid;
+    grid-template-rows: 2fr 30fr 1fr 1fr;
+    grid-template-columns: 1fr;
+}
+
+.grid-container-p1 {
+    display: grid;
+    grid-template-rows: 2fr 25fr 1fr 1fr;
+    grid-template-columns: 1fr;
+}
+
+.grid-container-p2 {
+    display: grid;
+    grid-template-rows: 2fr 40fr 1fr 1fr;
+    grid-template-columns: 1fr;
+}
+
 
 header{
     align-self: stretch;
@@ -87,8 +110,17 @@ main{
     width: 70%;
 }
 
-footer{
+aside {
     grid-row: 3;
+    justify-content: center;
+    text-align: center;
+    color: #000000;
+    background-color: #e6e6e6;
+    padding: 10px;
+}
+
+footer{
+    grid-row: 4;
 }
 
 @keyframes fadein {
@@ -103,15 +135,34 @@ footer{
     }
 }
 
-@media all and (min-width: 750px) {
+@media screen and (min-width: 750px) {
 
-    .grid-container {
+    .grid-container-home {
         display: grid;
-        grid-template-rows: 0.2fr 3fr 1fr;
+        grid-template-rows: 1fr 10fr 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .grid-container-about {
+        display: grid;
+        grid-template-rows: 1fr 20fr 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .grid-container-p1 {
+        display: grid;
+        grid-template-rows: 1fr 18fr 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .grid-container-p2 {
+        display: grid;
+        grid-template-rows: 1fr 22fr 1fr 1fr;
         grid-template-columns: 1fr;
     }
 
     .navigation {
+        grid-row: 1;
         flex-flow:row nowrap;
         justify-content: left;
     }
@@ -119,8 +170,6 @@ footer{
     .gallery1 {
         display: flex;
         flex-direction: row;
-        justify-content: center;
-        align-items: center;
         flex-wrap: wrap;
     }
 
@@ -129,7 +178,12 @@ footer{
         justify-content: center;
     }
 
-    footer {
+    aside {
         grid-row: 3;
+        justify-content: center;
+    }
+
+    footer {
+        grid-row: 4;
     }
 }
