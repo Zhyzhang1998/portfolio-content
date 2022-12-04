@@ -2,6 +2,15 @@
 
 <html lang="en-US">
     <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-7BWDJ511BJ"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-7BWDJ511BJ');
+        </script>
         <meta charset="UTF-8">
         <title>WETLAND HYPOTHESIS</title>
         <link rel="icon" href="./images/favicon.png">
@@ -13,14 +22,16 @@
         <script src="https://kit.fontawesome.com/e903c09e60.js" crossorigin="anonymous"></script>
     </head>
 
-    <body class="grid-container-p1">
+    <body>
+        <a class="jump" href="main">Skip to Main Content</a>
+        <div class="grid-container-p1">
         <header>
             <nav class="navigation">
                 <i class="fa-solid fa-house"></i>
                 <a href="./index.html" class="navlink">Home</a>
                 <a href="./aboutme.html" class="navlink">About me</a>
-                <a href="./project1.html" class="navlinkcurrent">Gallery page Project1</a>
-                <a href="./project2.html" class="navlink">Gallery page Project2</a>
+                <a href="./project1.html" class="navlinkcurrent">Project1</a>
+                <a href="./project2.html" class="navlink">Project2</a>
             </nav>
         </header>
         <main>
@@ -51,10 +62,25 @@
             </div>
         </main>
         <aside>
-            <p>This is about the Past, Present, and Future of Landscape architecture. Thank you to everyone who has influenced me</p>
+            <div class="grid-container-aside">
+            <h1>This is about the Past, Present, and Future of Landscape architecture. Thank you to everyone who has influenced me</h1>
+            <form action="https://formspree.io/f/mrgdnzgw" method="POST">
+                <label>
+                    Your email:
+                    <input type="email" name="email">
+                </label>
+                <label>
+                    Your message:
+                    <textarea name="message" rows="1"></textarea>
+                </label>
+                <button type="submit" id="submit">Send</button>
+            </form>
+            <script src="js/Button.js"></script>
+            </div>
         </aside>
         <footer>
             <h1>Zhongyi Zhang &copy; 2022</h1>
         </footer>
+        </div>
     </body>
 </html>

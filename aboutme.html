@@ -2,6 +2,15 @@
 
 <html lang="en-US">
     <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-7BWDJ511BJ"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-7BWDJ511BJ');
+        </script>
         <meta charset="UTF-8">
         <title>About me</title>
         <link rel="icon" href="./images/favicon.png">
@@ -13,17 +22,22 @@
         <script src="https://kit.fontawesome.com/e903c09e60.js" crossorigin="anonymous"></script>
     </head>
 
-    <body class="grid-container-about">
+    <body>
+        <a class="jump" href="main">Skip to Main Content</a>
+        <div class="grid-container-about">
         <header>
             <nav class="navigation">
                 <i class="fa-solid fa-house"></i>
                 <a href="./index.html" class="navlink">Home</a>
                 <a href="./aboutme.html" class="navlinkcurrent">About me</a>
-                <a href="./project1.html" class="navlink">Gallery page Project1</a>
-                <a href="./project2.html" class="navlink">Gallery page Project2</a>
+                <a href="./project1.html" class="navlink">Project1</a>
+                <a href="./project2.html" class="navlink">Project2</a>
             </nav>
         </header>
         <main>
+            <h1 class="title">
+                Nice to meet you!
+            </h1>
             <p class="maintext">
                 Hi, my name is Zhongyi Zhang. I'm from Suzhou, China. I was a landscape architect. I spent a year to do some landscape designs in China. Suzhou is a city renowned for its rapid technological development and its eye-catching canals, stone bridges, pagodas, and meticulously designed gardens, I was taken aback by the scenery and history surrounding the city’s iconic gardens. And now I am currently a student at the University of Michigan School of Information, pursing a Master's degree in User Experience and Human Computer Interaction. I want to be a font-end engineer or UX designer in the future. I believe technology and information combined with art design may help people enhance the living environment.
             </p>
@@ -39,10 +53,25 @@
             </p>
         </main>
         <aside>
+            <div class="grid-container-aside">
             <p>This is about the Past, Present, and Future of Landscape architecture. Thank you to everyone who has influenced me</p>
+            <form action="https://formspree.io/f/mrgdnzgw" method="POST">
+                <label>
+                    Your email:
+                    <input type="email" name="email">
+                </label>
+                <label>
+                    Your message:
+                    <textarea name="message" rows="1"></textarea>
+                </label>
+                <button type="submit" id="submit">Send</button>
+            </form>
+            <script src="js/Button.js"></script>
+            </div>
         </aside>
         <footer>
             <h1>Zhongyi Zhang &copy; 2022</h1>
         </footer>
+        </div>
     </body>
 </html>
