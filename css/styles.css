@@ -1,6 +1,6 @@
 .navigation {
     font-family: 'Raleway', sans-serif;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 100;
     letter-spacing: 2px;
     padding: 20px;
@@ -8,13 +8,23 @@
     background-color: #cacaca;
 }
 
+.navlink {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
 .navlinkcurrent {
     color: black;
     font-size: 25px;
     font-weight: 700;
     letter-spacing: 4px;
+    padding-left: 20px;
     padding-right: 20px;
-    padding-left: 20px
+    padding-top: 5px;
+    padding-bottom: 5px;
+
 }
 
 .title, .maintext {
@@ -25,18 +35,19 @@
     font-size: 150%;
 }
 
-.gallery {
-    width: 500px;
-    padding: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    border: 5px solid #000000;
+.gallery, .gallery2 {
+    width: 100%;
+    margin: auto;
+    border: 1px solid #000000;
 }
 
 .gallery:hover{
-    border: 15px solid #000000;
+    border: 5px solid #000000;
 }
 
+.gallery2:hover{
+    border: 5px solid #000000;
+}
 
 .jump {
     background: #e6e6e6;
@@ -86,7 +97,7 @@ header {
 
 .grid-container-home {
     display: grid;
-    grid-template-rows: 2fr 8fr 2fr 1fr;
+    grid-template-rows: 5fr 20fr 4fr 2fr;
     grid-template-columns: 1fr;
 }
 
@@ -99,19 +110,19 @@ header {
 
 .grid-container-about {
     display: grid;
-    grid-template-rows: 1fr 16fr 1fr 0.5fr;
+    grid-template-rows: 5fr 50fr 4fr 2fr;
     grid-template-columns: 1fr;
 }
 
 .grid-container-p1 {
     display: grid;
-    grid-template-rows: 1fr 13fr 1fr 0.5fr;
+    grid-template-rows: 5fr 40fr 4fr 2fr;
     grid-template-columns: 1fr;
 }
 
 .grid-container-p2 {
     display: grid;
-    grid-template-rows: 1fr 18fr 1fr 0.5fr;
+    grid-template-rows: 5fr 55fr 4fr 2fr;
     grid-template-columns: 1fr;
 }
 
@@ -164,7 +175,7 @@ footer{
     to {opacity: 1;}
   }
 
-@media screen and (prefers-reduced-motion: reduce){
+@media screen and (prefers-reduced-motion: reduce) {
 
     .gallery1 {
       animation: none;
@@ -178,7 +189,6 @@ footer{
         font-size: 25px;
         font-weight: 100;
         letter-spacing: 2px;
-        padding: 20px;
         text-align: left;
         background-color: #cacaca;
     }
@@ -188,8 +198,6 @@ footer{
         font-size: 30px;
         font-weight: 700;
         letter-spacing: 4px;
-        padding-right: 20px;
-        padding-left: 20px
     }
 
     .navigation {
@@ -203,7 +211,7 @@ footer{
 
     .grid-container-home {
         display: grid;
-        grid-template-rows: 1fr 8fr 1fr 1fr;
+        grid-template-rows: 1fr 10fr 1fr 1fr;
         grid-template-columns: 1fr;
     }
 
@@ -212,17 +220,35 @@ footer{
         grid-template-rows: 1fr 16fr 1fr 1fr;
         grid-template-columns: 1fr;
     }
-    
+
     .grid-container-p1 {
         display: grid;
         grid-template-rows: 1fr 13fr 1fr 1fr;
         grid-template-columns: 1fr;
     }
-    
+
     .grid-container-p2 {
         display: grid;
-        grid-template-rows: 1fr 18fr 1fr 1fr;
+        grid-template-rows: 1fr 9fr 1fr 1fr;
         grid-template-columns: 1fr;
+    }
+
+    .gallery {
+        max-width: 300px;
+        height: auto;
+    }
+
+    .gallery1 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .gallery2 {
+        max-width: 40%;
+        height: auto;
     }
 }
 
@@ -236,19 +262,19 @@ footer{
 
     .grid-container-about {
         display: grid;
-        grid-template-rows: 1fr 17fr 1fr 1fr;
+        grid-template-rows: 1fr 13fr 1fr 1fr;
         grid-template-columns: 1fr;
     }
 
     .grid-container-p1 {
         display: grid;
-        grid-template-rows: 1fr 15fr 1fr 1fr;
+        grid-template-rows: 1fr 11fr 1fr 1fr;
         grid-template-columns: 1fr;
     }
 
     .grid-container-p2 {
         display: grid;
-        grid-template-rows: 1fr 18fr 1fr 1fr;
+        grid-template-rows: 1fr 13fr 1fr 1fr;
         grid-template-columns: 1fr;
     }
 
@@ -263,19 +289,17 @@ footer{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
     }
 
-    main{
-        grid-row: 2;
-        justify-content: center;
+    .gallery {
+        max-width: 400px;
+        height: auto;
     }
 
-    aside {
-        grid-row: 3;
-        justify-content: center;
-    }
-
-    footer {
-        grid-row: 4;
+    .gallery2 {
+        max-width: 400px;
+        height: auto;
     }
 }
