@@ -4,4 +4,4 @@ function Change() {
     play_button.innerHTML = `Submit again`;
 }
 
-play_button .addEventListener(`click`, Change);
+play_button .addEventListener(`click`, Change); 
