@@ -184,53 +184,28 @@ footer{
 
 @media screen and (min-width: 750px) {
 
-    .navigation {
-        font-family: 'Raleway', sans-serif;
-        font-size: 25px;
-        font-weight: 100;
-        letter-spacing: 2px;
-        text-align: left;
-        background-color: #cacaca;
-    }
-
     .navlinkcurrent {
-        color: black;
         font-size: 30px;
-        font-weight: 700;
-        letter-spacing: 4px;
     }
 
     .navigation {
-        grid-row: 1;
-        display: flex;
         flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
     }
 
     .grid-container-home {
-        display: grid;
         grid-template-rows: 1fr 10fr 1fr 1fr;
-        grid-template-columns: 1fr;
     }
 
     .grid-container-about {
-        display: grid;
-        grid-template-rows: 1fr 16fr 1fr 1fr;
-        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 14fr 1fr 1fr;
     }
 
     .grid-container-p1 {
-        display: grid;
-        grid-template-rows: 1fr 13fr 1fr 1fr;
-        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 12fr 1fr 1fr;
     }
 
     .grid-container-p2 {
-        display: grid;
         grid-template-rows: 1fr 9fr 1fr 1fr;
-        grid-template-columns: 1fr;
     }
 
     .gallery {
@@ -239,10 +214,7 @@ footer{
     }
 
     .gallery1 {
-        display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
         justify-content: space-around;
     }
 
@@ -255,42 +227,32 @@ footer{
 @media screen and (min-width: 1200px) {
 
     .grid-container-home {
-        display: grid;
         grid-template-rows: 1fr 8fr 1fr 1fr;
-        grid-template-columns: 1fr;
     }
 
     .grid-container-about {
-        display: grid;
         grid-template-rows: 1fr 13fr 1fr 1fr;
-        grid-template-columns: 1fr;
     }
 
     .grid-container-p1 {
-        display: grid;
         grid-template-rows: 1fr 11fr 1fr 1fr;
-        grid-template-columns: 1fr;
     }
 
     .grid-container-p2 {
-        display: grid;
         grid-template-rows: 1fr 13fr 1fr 1fr;
-        grid-template-columns: 1fr;
     }
 
     .navigation {
-        display: flex;
-        grid-row: 1;
         flex-flow:row nowrap;
         justify-content: left;
+        font-size: 25px;
     }
 
     .gallery1 {
-        display: flex;
+        gap: 10px;
         flex-direction: row;
-        flex-wrap: wrap;
         align-items: center;
-        justify-content: space-around;
+        justify-content: center;
     }
 
     .gallery {
